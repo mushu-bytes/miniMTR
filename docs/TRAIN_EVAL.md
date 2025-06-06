@@ -8,7 +8,7 @@ bash scripts/dist_train.sh 8 --cfg_file cfgs/waymo/mtr+100_percent_data.yaml --b
 
 Alternatively,
 
-bash scripts/torchrun_train.sh 1 --cfg_file cfgs/waymo/less_layers.yaml --ckpt --batch_size 1 --epochs 5 --extra_tag my_first_exp
+bash scripts/torchrun_train.sh 1 --cfg_file cfgs/waymo/less_layers.yaml --ckpt --batch_size 16 --epochs 5 --extra_tag my_first_exp
 
 
 Actually, during the training process, the evaluation results will be logged to the log file under `output/waymo/mtr+100_percent_data/my_first_exp/log_train_xxxx.txt`
